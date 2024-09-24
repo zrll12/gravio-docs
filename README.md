@@ -1,19 +1,28 @@
-<div align="center">
-    <h1> Gravio </h1>
-</div>
+---
+layout:
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
 
-<p align="center">
-    <b>
-	English | 
-        <a href="./README_CN.md">简体中文</a>
-    </b>
-</p>
+# Gravio
+
+## Gravio
+
+English | [简体中文](README\_CN.md)
 
 Gravio (GRO) is a language that employs RISC (Reduced Instruction Set Computer) style assembly syntax, allowing for easy code writing that can be compiled into G-code, thereby simplifying the CNC (Computer Numerical Control) programming process.
 
-## Example
+### Example
 
-### G-code Input
+#### G-code Input
 
 ```gcode
 N10 G54 G90 G94 G23;
@@ -31,7 +40,7 @@ N120 M05;
 N130 M02;
 ```
 
-### Compiled Gravio Output
+#### Compiled Gravio Output
 
 ```gravio
 ORIGINAL 0;
@@ -55,7 +64,7 @@ MOTOR stop;
 MOTOR return;
 ```
 
-## Features
+### Features
 
-- **User-friendly**: Intuitive assembly-style syntax that is easy to read.
-- **Error handling**：Provides detailed error messages.
+* **User-friendly**: Intuitive assembly-style syntax that is easy to read.
+* **Error handling**：Provides detailed error messages.
